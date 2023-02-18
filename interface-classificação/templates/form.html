@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Previsão Especie de Feijão</title>
+    <link rel="stylesheet" href="../static/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+      <div class="page-header">
+          <h1>{{ titulo }}</h1>
+      </div>
+      <form action="/predicaoform" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="area">Area</label>
+            <input type="number" id="area" step="any" name="area" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="perimeter">Perimeter</label>
+            <input type="number" step="any"  id="perimeter" name="perimeter" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="major-axis">Major Axis Length </label>
+            <input type="number" step="any"  id="major-axis" name="major-axis" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="minor-axis">Minor Axis Length</label>
+            <input type="number" step="any" id="minor-axis" name="minor-axis" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="aspect-ration">Aspect Ration</label>
+            <input type="number" step="any" id="aspect-ration" name="aspect-ration" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="eccentricity">Eccentricity</label>
+            <input type="number" step="any" id="eccentricity" name="eccentricity" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="convex-area">Convex Area</label>
+            <input type="number" step="any" id="convex-area" name="convex-area" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="equiv-diameter">Equiv Diameter</label>
+            <input type="number" step="any"  id="equiv-diameter" name="equiv-diameter" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="extent">Extent</label>
+            <input type="number" step="any"  id="extent" name="extent" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="solidity">Solidity</label>
+            <input type="number" step="any"  id="solidity" name="solidity" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="roundness">Roundness</label>
+            <input type="number" step="any"  id="roundness" name="roundness" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="compactness">Compactness</label>
+            <input type="number" step="any"  id="compactness" name="compactness" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="shape-factor-1">Shape Factor 1</label>
+            <input type="number" step="any"  id="shape-factor-1" name="shape-factor-1" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="shape-factor-2">Shape Factor 2</label>
+            <input type="number" step="any"  id="shape-factor-2" name="shape-factor-2" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="shape-factor-3">Shape Factor 3</label>
+            <input type="number" step="any" id="shape-factor-3" name="shape-factor-3" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="shape-factor-4">Shape Factor 4</label>
+            <input type="number" step="any"  id="shape-factor-4" name="shape-factor-4" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+        </fieldset>
+      </form>
+    </div>
+</body>
+</html>
+
